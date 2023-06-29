@@ -321,4 +321,4 @@ servers:
 - url: http://{defaultHost}
   variables:
     defaultHost:
-      default: http://reservation-places.onrender.com/
+      default: reservation-places.onrender.com/

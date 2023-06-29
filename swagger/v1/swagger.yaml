@@ -318,7 +318,7 @@ paths:
         '204':
           description: No Content
 servers:
-- url: http://{defaultHost}
+- url: https://{defaultHost}
   variables:
     defaultHost:
       default: reservation-places.onrender.com/

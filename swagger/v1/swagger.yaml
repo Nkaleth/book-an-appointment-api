@@ -318,7 +318,7 @@ paths:
         '204':
           description: No Content
 servers:
-- url: http://{defaultHost}
+- url: https://{defaultHost}
   variables:
     defaultHost:
-      default: boiling-taiga-49294-bcedd3da6f09.herokuapp.com
+      default: reservation-places.onrender.com/

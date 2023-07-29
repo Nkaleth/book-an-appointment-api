@@ -321,4 +321,4 @@ servers:
 - url: https://{defaultHost}
   variables:
     defaultHost:
-      default: http://44.212.43.161:3000/
+      default: 44.212.43.161:3000/

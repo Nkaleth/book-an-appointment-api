@@ -318,7 +318,7 @@ paths:
         '204':
           description: No Content
 servers:
-- url: https://{defaultHost}
+- url: {defaultHost}
   variables:
     defaultHost:
       default: 44.212.43.161:3000/

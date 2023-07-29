@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host : <%= ENV['POSTGRES_HOST'] %>
+  port: 5432
 
 development:
   <<: *default
@@ -81,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: book_an_appointment_api_production
-  username: book_an_appointment_api
-  password: <%= ENV["BOOK_AN_APPOINTMENT_API_DATABASE_PASSWORD"] %>
+  database: <%= ENV['POSTGRES_DB']%>
+  username: <%= ENV['POSTGRES_USER']%>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>

@@ -15,6 +15,7 @@ services:
       - "5432:5432"
   demo-web:
     build: .
+    image: niltonsegura/back_end_reserve_places
     command: "./bin/rails server"
     environment:
       - RAILS_ENV=${RAILS_ENV}
